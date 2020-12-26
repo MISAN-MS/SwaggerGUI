@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import * as brands from '@fortawesome/free-brands-svg-icons';
-import * as solid from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-footer',
@@ -8,9 +6,6 @@ import * as solid from '@fortawesome/free-solid-svg-icons';
     styleUrls: ['./footer.component.sass']
 })
 export class FooterComponent implements OnInit {
-    public brands = brands;
-    public solid = solid;
-
     constructor() {
     }
 

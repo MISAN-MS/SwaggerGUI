@@ -7,7 +7,7 @@
             <li routerLink="['/']">{{ 'ABOUT' | translate }}</li>
             <li routerLink="">{{ 'SwaggerGUI' }}</li>
             <li (click)="switchLanguage()" #switcher id="language-switcher">
-                <fa-icon [icon]="isOpenLanguages ? icons.faChevronUp : icons.faChevronDown"></fa-icon>
+                <fa-icon [icon]="isOpenLanguages ? ['fas', 'chevron-up'] : ['fas', 'chevron-down']"></fa-icon>
                 <img class="language" src="/assets/icons/{{ selectedLanguage.code }}.svg">
             </li>
         </ul>

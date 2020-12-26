@@ -1,7 +1,5 @@
 import {Component, ElementRef, OnInit, Renderer2, ViewChild} from '@angular/core';
-import * as icons from '@fortawesome/free-solid-svg-icons';
 import {TranslateService} from '@ngx-translate/core';
-import {Target} from '@angular/compiler';
 
 @Component({
     selector: 'app-header',
@@ -12,7 +10,6 @@ export class HeaderComponent implements OnInit {
     @ViewChild('switcher') switcher: ElementRef;
     @ViewChild('languageMenu') languageMenu: ElementRef;
 
-    public icons = icons;
     public selectedLanguage = {
         name: '',
         code: ''
