@@ -7,8 +7,6 @@ import {TranslateService} from '@ngx-translate/core';
     styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-    title = 'swaggerGUI';
-
     constructor(private translateService: TranslateService) {
         this.translateService.setDefaultLang('pl');
     }
