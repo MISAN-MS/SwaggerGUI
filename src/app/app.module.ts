@@ -15,7 +15,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {FooterComponent} from './components/footer/footer.component';
 import {PagePartComponent} from './components/page-part/page-part.component';
-import { AboutComponent } from './pages/about/about.component';
+import {AboutComponent} from './pages/about/about.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http);
