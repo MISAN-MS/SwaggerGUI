@@ -1,0 +1,24 @@
+<header>
+    <div class="logo">
+        <img alt="swaggerGUI" title="swaggerGUI" routerLink="">
+    </div>
+    <nav class="navigation">
+        <ul>
+            <li routerLink="['/']">{{ 'ABOUT' | translate }}</li>
+            <li routerLink="">{{ 'SwaggerGUI' }}</li>
+            <li (click)="switchLanguage()" #switcher id="language-switcher">
+                <fa-icon [icon]="isOpenLanguages ? ['fas', 'chevron-up'] : ['fas', 'chevron-down']"></fa-icon>
+                <img class="language" src="/assets/icons/{{ selectedLanguage.code }}.svg">
+            </li>
+        </ul>
+        <div [ngClass]="{'hidden': !isOpenLanguages}" class="languagesBox" #languageMenu>
+            <ul class="languages">
+                <li *ngFor="let language of languages; index as index"
+                    class="lang-item"
+                    (click)="changeLanguage(index)">
+                    {{ language.name }} <img class="language" src="/assets/icons/{{ language.code }}.svg">
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

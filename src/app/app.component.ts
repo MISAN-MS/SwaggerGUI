@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'swaggerGUI';
+    constructor(private translateService: TranslateService) {
+        this.translateService.setDefaultLang('pl');
+    }
 }
