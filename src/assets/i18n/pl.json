@@ -1,7 +1,48 @@
 {
-    "ABOUT": "O stronie",
-    "ABOUT_TEXT": "Projekt SwaggerGUI to graficzne rozszerzenie openAPI i Swagger UI. Pozwala każdemu dosłownie wyklikać zasoby interfejsu API. Nie musisz już żmudnie pisać setek bardzo podobnych do siebie linijek – wszystko możesz łatwo i szybko wyklikać, a dzięki kopiowaniu już utworzonych zasobów tworzenie interfejsu staje się szybkie i łatwe.",
     "GIT_HUB_LINK": "GitHub projekt",
     "AUTHOR_LINK": "MIS@N - strona autora",
-    "AUTHOR_EMAIL_LINK": "Skontaktuj się"
+    "AUTHOR_EMAIL_LINK": "Skontaktuj się",
+    "CONFIRM_DEACTIVATE": {
+        "TITLE": "Czy napewno chcesz zamknąć to okno?",
+        "TEXT": "Zamykajac to okno utacisz cały dotychczasowy projekt. Obecnie nie ma możliwości zapisania przebiegu pracy.",
+        "CONFIRM": "Tak, zamknij",
+        "CANCEL": "Pozostań na stronie"
+    },
+
+    "validator": {
+        "required": "Pole {{fieldName}} jest wymagane!",
+        "pattern": "Pole {{fieldName}} ma nieprawidłowy format!"
+    },
+    "TOOLTIPS": {
+        "NEW_NAME": "Minimalna długość nazwy projektu to 2 znaki",
+        "NEW_VERSION": "Wersja musi mieć przynajmniej 3 znaki w tym 1 kropkę i może składać się jedynie z cyfr i kropek"
+    },
+    "MENU": {
+        "ABOUT": "O stronie",
+        "GUI": "SwaggerGUI"
+    },
+    "LANGUAGES": {
+        "pl": "pl",
+        "en": "en"
+    },
+    "INPUTS": {
+        "NEW": {
+            "TECHNOLOGY": "Swagger/OpenAPI",
+            "TITLE": "Nazwa",
+            "DESCRIPTION": "Opis",
+            "VERSION": "Wersja"
+        }
+    },
+    "TITLES": {
+        "NEW_PROJECT": "Nowy projekt"
+    },
+    "BUTTONS": {
+        "CREATE": "Utwórz",
+        "CANCEL": "Anuluj",
+        "ACCEPT": "Akceptuję"
+    },
+    "TEXTS": {
+        "ABOUT": "Projekt SwaggerGUI to graficzne rozszerzenie openAPI i Swagger UI. Pozwala każdemu dosłownie wyklikać zasoby interfejsu API. Nie musisz już żmudnie pisać setek bardzo podobnych do siebie linijek – wszystko możesz łatwo i szybko wyklikać, a dzięki kopiowaniu już utworzonych zasobów tworzenie interfejsu staje się szybkie i łatwe.",
+        "COOKIE": "Ta strona używa plików cookie. Korzystając z tego serwisu akceptujesz możliwość ustawienia plików cookie w swojej przeglądarce."
+    }
 }

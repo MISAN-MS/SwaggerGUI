@@ -1,0 +1,48 @@
+{
+    "GIT_HUB_LINK": "GitHub project",
+    "AUTHOR_LINK": "MIS@N - author page",
+    "AUTHOR_EMAIL_LINK": "Contact with author",
+    "CONFIRM_DEACTIVATE": {
+        "TITLE": "Are You sure?",
+        "TEXT": "By closing this window You will lose the entire project so far. Currently, it is not possible to save the project  .",
+        "CONFIRM": "Yes, confirm",
+        "CANCEL": "No, stay on page"
+    },
+
+    "validator": {
+        "require": "{{fieldName}} is required!",
+        "pattern": "{{fieldName}} has incorrect format!!"
+    },
+    "TOOLTIPS": {
+        "NEW_NAME": "The name should have minimum 2 chars",
+        "NEW_VERSION": "The version have to minimum 3 chars including a dot and can be only digits and dots"
+    },
+    "MENU": {
+        "ABOUT": "About",
+        "GUI": "SwaggerGUI"
+    },
+    "LANGUAGES": {
+        "pl": "pl",
+        "en": "en"
+    },
+    "INPUTS": {
+        "NEW": {
+            "TECHNOLOGY": "Swagger/OpenAPI",
+            "TITLE": "Name",
+            "DESCRIPTION": "Description",
+            "VERSION": "Version"
+        }
+    },
+    "TITLES": {
+        "NEW_PROJECT": "New project"
+    },
+    "BUTTONS": {
+        "CREATE": "Create",
+        "CANCEL": "Cancel",
+        "ACCEPT": "Accept"
+    },
+    "TEXTS": {
+        "ABOUT": "The SwaggerGUI project is an openAPI and Swagger UI graphical extension. It allows anyone to literally click API resources. You don't have to tediously write hundreds of very similar lines - you can click everything easily and quickly, and thanks to copying already created resources, creating an interface becomes quick and easy.",
+        "COOKIE": "This website uses cookies. By using this website, you accept the option of setting cookies in your browser."
+    }
+}

@@ -1,0 +1,58 @@
+<div class="mat-dialog-title">
+    <fa-icon [icon]="['far', 'file-code']" size="4x"></fa-icon>
+    <h1>{{ 'TITLES.NEW_PROJECT' | translate }}</h1>
+</div>
+<form [formGroup]="form" (submit)="onCreate()" >
+    <mat-dialog-content>
+        <div class="from-group">
+            <label>{{ 'INPUTS.NEW.TECHNOLOGY' | translate }}</label>
+            <select formControlName="technology" class="form-input">
+                <option *ngFor="let technology of technologies" [value]="technology.value">
+                    {{ technology.name + ' ' + technology.version }}
+                </option>
+            </select>
+        </div>
+        <app-validator-error-message
+            *ngIf="form.controls.technology.invalid && submit"
+            [errors]="form.controls.technology.errors"
+            [fieldName]="'INPUTS.NEW.TECHNOLOGY'"
+        ></app-validator-error-message>
+        <div class="from-group">
+            <label class="tooltip-box">{{ 'INPUTS.NEW.TITLE' | translate }}
+                <fa-icon
+                    class="tooltip"
+                    [icon]="['far', 'question-circle']"
+                    title="{{ 'TOOLTIPS.NEW_NAME' | translate }}"
+                ></fa-icon></label>
+            <input type="text" formControlName="title" class="form-input">
+        </div>
+        <app-validator-error-message
+            *ngIf="form.controls.title.invalid && submit"
+            [errors]="form.controls.title.errors"
+            [fieldName]="'INPUTS.NEW.TITLE'"
+        ></app-validator-error-message>
+        <div class="from-group">
+            <label class="tooltip-box">{{ 'INPUTS.NEW.VERSION' | translate }}
+                <fa-icon
+                    class="tooltip"
+                    [icon]="['far', 'question-circle']"
+                    title="{{ 'TOOLTIPS.NEW_VERSION' | translate }}"
+                ></fa-icon>
+            </label>
+            <input type="text" formControlName="version" class="form-input">
+        </div>
+        <app-validator-error-message
+            *ngIf="form.controls.version.invalid && submit"
+            [errors]="form.controls.version.errors"
+            [fieldName]="'INPUTS.NEW.VERSION'"
+        ></app-validator-error-message>
+        <div class="from-group">
+            <label>{{ 'INPUTS.NEW.DESCRIPTION' | translate }}</label>
+            <textarea formControlName="description" rows="4" class="form-input"></textarea>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <input type="submit" value="{{ 'BUTTONS.CREATE' | translate }}">
+        <button [mat-dialog-close]="true">{{ 'BUTTONS.CANCEL' | translate }}</button>
+    </mat-dialog-actions>
+</form>

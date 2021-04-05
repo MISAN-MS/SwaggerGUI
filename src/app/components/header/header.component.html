@@ -4,19 +4,20 @@
     </div>
     <nav class="navigation">
         <ul>
-            <li [routerLink]="['/', 'about']">{{ 'ABOUT' | translate }}</li>
-            <li [routerLink]="['']">{{ 'SwaggerGUI' }}</li>
+            <li [routerLink]="['/', 'about']">{{ 'MENU.ABOUT' | translate }}</li>
+            <li [routerLink]="['/', 'gui']">{{ 'MENU.GUI' | translate }}</li>
             <li (click)="switchLanguage()" #switcher id="language-switcher">
                 <fa-icon [icon]="isOpenLanguages ? ['fas', 'chevron-up'] : ['fas', 'chevron-down']"></fa-icon>
-                <img class="language" src="/assets/icons/{{ selectedLanguage.code }}.svg">
+                <img class="language" src="/assets/icons/{{ selectedLanguage }}.svg">
             </li>
         </ul>
         <div [ngClass]="{'hidden': !isOpenLanguages}" class="languagesBox" #languageMenu>
             <ul class="languages">
-                <li *ngFor="let language of languages; index as index"
+                <li *ngFor="let language of languages"
                     class="lang-item"
-                    (click)="changeLanguage(index)">
-                    {{ language.name }} <img class="language" src="/assets/icons/{{ language.code }}.svg">
+                    (click)="changeLanguage(language)">
+                    {{ 'LANGUAGES.' + language | translate }}
+                    <img class="language" src="/assets/icons/{{ language }}.svg">
                 </li>
             </ul>
         </div>
