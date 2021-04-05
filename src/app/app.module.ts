@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './components/header/header.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HomeComponent} from './pages/home/home.component';
 import {FontAwesomeModule, FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {far} from '@fortawesome/free-regular-svg-icons';
@@ -16,6 +16,12 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {FooterComponent} from './components/footer/footer.component';
 import {PagePartComponent} from './components/page-part/page-part.component';
 import {AboutComponent} from './pages/about/about.component';
+import {GuiComponent} from './pages/gui/gui.component';
+import {NewComponent} from './components/new/new.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import {ValidatorErrorMessageComponent} from './components/validator-error-message/validator-error-message.component';
+import {CookieComponent} from './components/cookie/cookie.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http);
@@ -28,7 +34,11 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         HomeComponent,
         FooterComponent,
         PagePartComponent,
-        AboutComponent
+        AboutComponent,
+        GuiComponent,
+        NewComponent,
+        ValidatorErrorMessageComponent,
+        CookieComponent
     ],
     imports: [
         BrowserModule,
@@ -42,7 +52,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
                 useFactory: HttpLoaderFactory,
                 deps: [HttpClient]
             }
-        })
+        }),
+        BrowserAnimationsModule,
+        MatDialogModule,
+        FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

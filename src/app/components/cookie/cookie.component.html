@@ -1,0 +1,5 @@
+<div class="cookie-bar" *ngIf="!accepted">
+    <p class="cookie-text">{{ 'TEXTS.COOKIE' | translate }}</p>
+    <fa-icon [icon]="['fas', 'cookie-bite']" size="5x"></fa-icon>
+    <button class="btn" (click)="accept()">{{ 'BUTTONS.ACCEPT' | translate }}</button>
+</div>

@@ -1,0 +1,65 @@
+:host(app-new)
+    width: 100%
+    display: inline-block
+
+.mat-dialog-title
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    border-bottom: 2px solid #414141
+    border-left: 2px solid #414141
+    padding-bottom: 1rem
+    margin: 0
+    h1
+        display: block
+        font-size: 2.4rem
+        width: auto
+        padding-left: 1rem
+        line-height: 4rem
+    fa-icon
+        width: 55px
+mat-dialog-content
+    width: 100%
+    margin: 0
+    padding: 1rem 0
+    border-left: 2px solid #414141
+    .from-group
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        padding: .5rem 0
+        label
+            width: 200px
+            text-align: right
+            padding-right: 1rem
+            line-height: 2.5rem
+            position: relative
+        .tooltip
+            color: #a8a8a8
+            position: absolute
+            font-size: .8rem
+            top: -.8rem
+            left: -50%
+        .form-input
+            width: 300px
+            background-color: transparent
+            border: 1px solid #414141
+            height: 2.5rem
+            line-height: 1.5rem
+            padding: .5rem
+textarea
+    resize: none
+    height: auto !important
+mat-dialog-actions
+    width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-top: 1rem
+    & *
+        width: 30%
+        padding: .5rem
+        background-color: #414141
+        color: #fff
+        border: none
