@@ -1,3 +1,4 @@
+@import "src/assets/sass/variables"
 :host(app-cookie)
     position: fixed
     top: calc(100% - 250px)
@@ -8,8 +9,8 @@
     display: flex
     justify-content: space-around
     align-items: center
-    background-color: #000000
-    color: #fbfbfb
+    background-color: $color-black
+    color: $color-text-first
     padding: 2rem
     .cookie-text
         flex: 3
@@ -17,8 +18,8 @@
         flex: 2
     button
         width: 150px
-        background-color: #000
-        border: 1px dotted #fbfbfb
-        color: #fbfbfb
+        background-color: $color-black
+        border: 1px dotted $color-text-first
+        color: $color-text-first
         padding: 1rem
         cursor: pointer

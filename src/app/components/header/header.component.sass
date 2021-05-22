@@ -1,3 +1,4 @@
+@import "src/assets/sass/variables"
 header
     width: 100%
     height: 100px
@@ -35,7 +36,7 @@ header
                 padding: 0 15px
                 margin-left: 1rem
                 height: 50%
-                border: 1px solid black
+                border: 1px solid $color-black
                 border-radius: 15px
                 display: flex
                 justify-content: center
@@ -43,7 +44,7 @@ header
                 position: relative
                 img.language
                     width: 45px
-                    border: 1px solid black
+                    border: 1px solid $color-black
                 &#language-switcher > fa-icon
                     width: auto
                     margin-right: 1rem
@@ -52,10 +53,10 @@ header
             top: 80px
             width: auto
             border-radius: 15px
-            box-shadow: inset 0 0 10px darkgray
+            box-shadow: inset 0 0 10px $color-darkgray
             height: auto
             padding: .5rem
-            background-color: white
+            background-color: $color-text-first
             ul
                 list-style: none
                 display: flex
@@ -67,7 +68,7 @@ header
                     padding: .25rem
                     border-radius: 0
                     &:first-child
-                        border-bottom: 1px dotted black
+                        border-bottom: 1px dotted $color-black
                         padding-bottom: .5rem
                     img
                         width: 30px
@@ -75,5 +76,5 @@ header
                         border-radius: 50%
                         object-fit: cover
                         object-position: center
-                        border: 1px solid darkgray
+                        border: 1px solid $color-darkgray
                         margin-left: .5rem

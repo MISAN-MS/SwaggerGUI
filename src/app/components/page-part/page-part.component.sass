@@ -1,15 +1,16 @@
+@import "src/assets/sass/variables"
 :host(app-page-part)
     display: flex
     justify-content: center
     align-items: center
     width: 100%
     min-height: 75vh
-    border-bottom: 1px solid #414141
+    border-bottom: 1px solid $color-background-first
     padding: 2rem 0
     &:nth-child(1)
-        border-top: 1px solid #414141
+        border-top: 1px solid $color-background-first
     &:nth-child(2)
-        background: #414141
-        color: white
+        background: $color-background-first
+        color: $color-text-first
     *
         width: auto

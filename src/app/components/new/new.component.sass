@@ -1,3 +1,4 @@
+@import "src/assets/sass/variables"
 :host(app-new)
     width: 100%
     display: inline-block
@@ -7,8 +8,8 @@
     justify-content: center
     align-items: center
     width: 100%
-    border-bottom: 2px solid #414141
-    border-left: 2px solid #414141
+    border-bottom: 2px solid $color-background-first
+    border-left: 2px solid $color-background-first
     padding-bottom: 1rem
     margin: 0
     h1
@@ -23,7 +24,7 @@ mat-dialog-content
     width: 100%
     margin: 0
     padding: 1rem 0
-    border-left: 2px solid #414141
+    border-left: 2px solid $color-background-first
     .from-group
         display: flex
         justify-content: center
@@ -36,7 +37,7 @@ mat-dialog-content
             line-height: 2.5rem
             position: relative
         .tooltip
-            color: #a8a8a8
+            color: $color-darkgray
             position: absolute
             font-size: .8rem
             top: -.8rem
@@ -44,7 +45,7 @@ mat-dialog-content
         .form-input
             width: 300px
             background-color: transparent
-            border: 1px solid #414141
+            border: 1px solid $color-background-first
             height: 2.5rem
             line-height: 1.5rem
             padding: .5rem
@@ -60,6 +61,6 @@ mat-dialog-actions
     & *
         width: 30%
         padding: .5rem
-        background-color: #414141
-        color: #fff
+        background-color: $color-background-first
+        color: $color-text-first
         border: none
